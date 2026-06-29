@@ -3,7 +3,7 @@
     "description": "A unlimited speed multifunctional remote control software",
     "version": "4.7.4.8",
     "license": "Proprietary",
-    "url": "https://dl.todesk.com/irrigation/ToDesk_4.7.4.8.exe#/dl.7z",
+    "url": "https://dl.todesk.com/irrigation/ToDesk_4.8.9.0.exe#/dl.7z",
     "hash": "843bd6bdc5f7878e914224cc46a34d87994b88036761152817ad5acbab7f3bcf",
     "bin": ["ToDesk.exe", ["ToDesk.exe", "ToDesk"]],
     "pre_install": [
