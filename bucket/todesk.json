@@ -7,7 +7,6 @@
         "64bit": {
             "url": "https://dl.todesk.com/irrigation/ToDesk_4.9.7.1.exe#/dl.zip",
             "hash": "bf3c42cd72198158dc37b9bf4c8f3790eaf029cf94b4455b2669f598f1288bd9",
-            "extract_dir": "app64",
             "pre_install": [
                 "# 解压内层64位7z压缩包到当前目录",
                 "7z x \"$dir\\app64.7z\" -o\"$dir\" -y"
