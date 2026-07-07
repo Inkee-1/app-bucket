@@ -1,0 +1,33 @@
+{
+    "version": "1.17.1",
+    "description": "The implementation of the LSP server for Slint featuring diagnostics, code completion, goto definition, and more importantly, live-preview",
+    "homepage": "https://crates.io/crates/slint-lsp",
+    "license": {
+        "identifier": "GPL-3.0-only|LicenseRef-Slint-Royalty-free-2.0|LicenseRef-Slint-Software-3.0",
+        "url": "https://github.com/slint-ui/slint/raw/refs/heads/master/LICENSE.md"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/slint-ui/slint/releases/download/v1.17.1/slint-lsp-windows-x86_64.zip",
+            "hash": "0f293084ace84b7a41fa98e2cd46330b8b1a628a6a54024daaae16fe345d99c7"
+        },
+        "arm64": {
+            "url": "https://github.com/slint-ui/slint/releases/download/v1.17.1/slint-lsp-windows-arm64.zip",
+            "hash": "sha256:c72c547ba35619c3517550a7b640e2474c0a456e05852badadfdafd702a0a9b3"
+        }
+    },
+    "bin": "slint-lsp.exe",
+    "checkver": {
+        "github": "https://github.com/slint-ui/slint"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/slint-ui/slint/releases/download/v$version/slint-lsp-windows-x86_64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/slint-ui/slint/releases/download/v$version/slint-lsp-windows-arm64.zip"
+            }
+        }
+    }
+}
