@@ -1,37 +1,28 @@
 {
-    "homepage": "https://www.todesk.com/",
+    "version": "nightly",
     "description": "A unlimited speed multifunctional remote control software",
-    "version": "4.9.7.1",
+    "homepage": "https://www.todesk.com/",
     "license": "Proprietary",
-    "architecture": {
-        "64bit": {
-            "url": "https://dl.todesk.com/irrigation/ToDesk_4.9.7.1.exe#/dl.zip",
-            "hash": "bf3c42cd72198158dc37b9bf4c8f3790eaf029cf94b4455b2669f598f1288bd9",
-            "pre_install": [
-                "# 解压内层64位7z压缩包到当前目录",
-                "7z x \"$dir\\app64.7z\" -o\"$dir\" -y"
-            ]
-        },
-        "32bit": {
-            "url": "https://dl.todesk.com/irrigation/ToDesk_4.9.7.1.exe#/dl.zip",
-            "hash": "bf3c42cd72198158dc37b9bf4c8f3790eaf029cf94b4455b2669f598f1288bd9",
-            "pre_install": ["7z x \"$dir\\app32.7z\" -o\"$dir\" -y"]
-        }
+    "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe#/dl.7z",
+    "installer": {
+        "script": [
+            "$package_archive = if ($architecture -eq '64bit') {'app64.7z'} else {'app32.7z'}",
+            "Expand-7zipArchive -Path \"$dir\\$package_archive\" -DestinationPath \"$dir\"",
+            "Remove-Item -Path \"$dir\\`$PLUGINSDIR\", \"$dir\\app*.7z\", \"$dir\\uninst.exe\" -Force -Recurse",
+            "if (-not (Test-Path \"$persist_dir\\config.ini\")) {",
+            "    $initial_config = \"[ConfigInfo]`nautoStart=0`nautoupdate=0`n\"",
+            "    New-Item -Force -Path \"$dir\\config.ini\" -ItemType File -Value $initial_config | Out-Null",
+            "}"
+        ]
     },
-    "bin": ["ToDesk.exe", ["ToDesk.exe", "ToDesk"]],
-    "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
-        "    New-Item -Force -Path \"$persist_dir\\config.ini\" -ItemType File -Value \"[ConfigInfo]`nautoStart=0\" | Out-Null",
-        "}"
+    "shortcuts": [
+        [
+            "ToDesk.exe",
+            "ToDesk"
+        ]
     ],
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\uninst.exe\" -Force -Recurse",
-    "shortcuts": [["ToDesk.exe", "ToDesk"]],
-    "persist": ["Logs", "config.ini"],
-    "checkver": {
-        "url": "https://update.todesk.com/windows/uplog.html",
-        "regex": ">([\\d.]+)</div>"
-    },
-    "autoupdate": {
-        "url": "https://dl.todesk.com/irrigation/ToDesk_$version.exe#/dl.zip"
-    }
+    "persist": [
+        "Logs",
+        "config.ini"
+    ]
 }
