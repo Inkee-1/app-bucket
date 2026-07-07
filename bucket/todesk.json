@@ -4,6 +4,7 @@
     "homepage": "https://www.todesk.com/",
     "license": "Proprietary",
     "url": "https://dl.todesk.com/irrigation/ToDesk_4.9.7.1.exe#/dl.zip",
+    "hash": "bf3c42cd72198158dc37b9bf4c8f3790eaf029cf94b4455b2669f598f1288bd9",
     "installer": {
         "script": [
             "$package_archive = if ($architecture -eq '64bit') {'app64.7z'} else {'app32.7z'}",
