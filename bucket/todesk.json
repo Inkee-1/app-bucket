@@ -1,10 +1,10 @@
 {
-    "version": "4.9.7.1",
+    "version": "4.9.7.3",
     "description": "A unlimited speed multifunctional remote control software",
     "homepage": "https://www.todesk.com/",
     "license": "Proprietary",
-    "url": "https://dl.todesk.com/irrigation/ToDesk_4.9.7.1.exe#/dl.zip",
-    "hash": "bf3c42cd72198158dc37b9bf4c8f3790eaf029cf94b4455b2669f598f1288bd9",
+    "url": "https://dl.todesk.com/irrigation/ToDesk_4.9.7.3.exe#/dl.zip",
+    "hash": "b38d881699dcb856675fea3898bfb60abffcbbcc4e89b782713c573ed93d9296",
     "installer": {
         "script": [
             "$package_archive = if ($architecture -eq '64bit') {'app64.7z'} else {'app32.7z'}",
@@ -16,7 +16,13 @@
             "}"
         ]
     },
-    "bin": ["ToDesk.exe", ["ToDesk.exe", "ToDesk"]],
+    "bin": [
+        "ToDesk.exe",
+        [
+            "ToDesk.exe",
+            "ToDesk"
+        ]
+    ],
     "shortcuts": [
         [
             "ToDesk.exe",
@@ -28,10 +34,10 @@
         "config.ini"
     ],
     "checkver": {
-"url": "https://update.todesk.com/windows/uplog.html",
-"regex": ">([\\d.]+)</div>"
-},
-"autoupdate": {
-"url": "https://dl.todesk.com/irrigation/ToDesk_$version.exe#/dl.zip"
-}
+        "url": "https://update.todesk.com/windows/uplog.html",
+        "regex": ">([\\d.]+)</div>"
+    },
+    "autoupdate": {
+        "url": "https://dl.todesk.com/irrigation/ToDesk_$version.exe#/dl.zip"
+    }
 }
