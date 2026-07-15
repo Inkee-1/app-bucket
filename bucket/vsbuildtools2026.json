@@ -1,10 +1,10 @@
 {
-    "version": "18.7.3",
+    "version": "18.7.4",
     "description": "Microsoft Visual Studio Build Tools 2026",
     "homepage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2026",
     "license": "https://visualstudio.microsoft.com/zh-hans/license-terms/vs2026-ga-diagnostic-buildtools/",
     "url": "https://aka.ms/vs/18/release/vs_buildtools.exe",
-    "hash": "dc73348aa4248cb255167446b816f7aafbfc377ce9b0a7310a9a80d530b889be",
+    "hash": "75f1d70b662086cdba165fcbc28f6b11f7e3cf2bb5231d583eec5bd027089f3d",
     "installer": {
         "script": "Start-Process -FilePath \"$dir\\vs_buildtools.exe\" -ArgumentList \"--installPath $dir\\vs\\ --add Microsoft.VisualStudio.Workload.MSBuildTools --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --quiet --norestart\" -Wait"
     },
