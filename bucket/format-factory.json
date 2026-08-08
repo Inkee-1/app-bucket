@@ -8,7 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://down.pcgeshi.com/FormatFactory_setup.exe",
+            "url": "https://down.pcgeshi.com/FormatFactory_setup.exe/",
             "hash": "69fec8200a72f12bdf92372e2aab1e9739e22ed5f34aa900c5334bf6b92bf7d4",
             "pre_install": [
                 "Remove-Item \"$dir\\*\" -Exclude 'Carrier.exe' -Force -Recurse",
@@ -17,7 +17,7 @@
             ]
         },
         "32bit": {
-            "url": "https://down.pcgeshi.com/FormatFactory_setup.exe#/dl.7z",
+            "url": "https://down.pcgeshi.com/FormatFactory_setup.exe",
             "hash": "bf3c42cd72198158dc37b9bf4c8f3790eaf029cf94b4455b2669f598f1288bd9",
             "pre_install": [
                 "Remove-Item \"$dir\\*\" -Exclude 'Carrier.exe' -Force -Recurse",
