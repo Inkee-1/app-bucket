@@ -1,5 +1,5 @@
 {
-    "version": "5.22.0.0",
+    "version": "4.10.5.0",
     "description": "Multifunctional, multimedia file conversion tool",
     "homepage": "http://freetime.tech/formatfactory/CN/index.html",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://down.pcgeshi.com/FormatFactory_setup.exe/",
-            "hash": "69fec8200a72f12bdf92372e2aab1e9739e22ed5f34aa900c5334bf6b92bf7d4",
+            "url": "http://public.pcfreetime.com/FFSetup4.10.5.0.exe#/dl.7z",
+            "hash": "32a1b3a2d5bd7ccc39ad753f990eb17b1fa3cdf31c194caff46c1965c75bf0a8",
             "pre_install": [
                 "Remove-Item \"$dir\\*\" -Exclude 'Carrier.exe' -Force -Recurse",
                 "Expand-7zipArchive \"$dir\\Carrier.exe\" -Removal",
@@ -17,8 +17,8 @@
             ]
         },
         "32bit": {
-            "url": "https://down.pcgeshi.com/FormatFactory_setup.exe",
-            "hash": "bf3c42cd72198158dc37b9bf4c8f3790eaf029cf94b4455b2669f598f1288bd9",
+            "url": "http://public.pcfreetime.com/FFSetup4.10.5.0.exe#/dl.7z",
+            "hash": "32a1b3a2d5bd7ccc39ad753f990eb17b1fa3cdf31c194caff46c1965c75bf0a8",
             "pre_install": [
                 "Remove-Item \"$dir\\*\" -Exclude 'Carrier.exe' -Force -Recurse",
                 "Expand-7zipArchive \"$dir\\Carrier.exe\" -Removal",
@@ -26,8 +26,19 @@
             ]
         }
     },
-    "bin": ["FormatFactory.exe", ["FormatFactory.exe", "formatfactory"]],
-    "shortcuts": [["FormatFactory.exe", "Format Factory"]],
+    "bin": [
+        "FormatFactory.exe",
+        [
+            "FormatFactory.exe",
+            "formatfactory"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "FormatFactory.exe",
+            "Format Factory"
+        ]
+    ],
     "checkver": {
         "url": "http://www.pcfreetime.com/formatfactory/index.php",
         "regex": "FFSetup([\\d.]+).exe"
