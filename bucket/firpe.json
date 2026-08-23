@@ -13,7 +13,7 @@
     },
     "bin": [
         [
-            "FirPE.exe",
+            "FirPE-V$version.exe",
             "FirPE"
         ]
     ],
