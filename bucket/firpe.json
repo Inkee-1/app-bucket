@@ -1,0 +1,36 @@
+{
+    "version": "2.1.1",
+    "description": "FirPE 是一款系统预安装环境（Windows PE），它具有简约、易操作等特点，使用起来十分人性化。",
+    "homepage": "https://firpe.cn/",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/luyuanbo79/firpe/releases/download/v2.1.1/FirPE-V2.1.1.exe",
+            "hash": "fe24c82e56961847f7acccc6d1d037b2ddc272c92d8d54c9ba468700dc48685f"
+        }
+    },
+    "bin": [
+        [
+            "FirPE.exe",
+            "FirPE"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "FirPE.exe",
+            "..\\FirPE"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/luyuanbo79/firpe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/luyuanbo79/firpe/releases/download/v$version/FirPE-V$version.exe"
+            }
+        }
+    }
+}

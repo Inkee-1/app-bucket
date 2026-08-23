@@ -1,7 +1,7 @@
 {
-    "version": "0.9.28-",
+    "version": "",
     "description": "RADlinker是一种用于生成 x64 PE/COFF 二进制的新型性能链接器。",
-    "homepage": "https://https://github.com/EpicGames/raddebugger",
+    "homepage": "https://github.com/EpicGames/raddebugger",
     "license": {
         "identifier": "MIT",
         "url": "https://github.com/EpicGames/raddebugger/blob/master/LICENSE"
@@ -31,7 +31,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/EpicGames/raddebugger/releases/download/v0.9.28-alpha/radlink.exe"
+                "url": "https://github.com/EpicGames/raddebugger/releases/download/v$version/radlink.exe"
             }
         }
     }
