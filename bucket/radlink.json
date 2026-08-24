@@ -1,5 +1,5 @@
 {
-    "version": "",
+    "version": "v0.9.28-alpha",
     "description": "RADlinker是一种用于生成 x64 PE/COFF 二进制的新型性能链接器。",
     "homepage": "https://github.com/EpicGames/raddebugger",
     "license": {
