@@ -1,28 +1,28 @@
 {
-    "version": "1.11.0",
+    "version": "2.0.1",
     "description": "Dependi extension for the Zed editor — manage and update dependencies inline",
-    "homepage": "https://mpiton.github.io/zed-dependi/",
+    "homepage": "https://github.com/mpiton/zed-depsy/",
     "license": "Mit",
     "notes": "Full documentation available here: https://mpiton.github.io/zed-dependi/",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mpiton/zed-dependi/releases/download/v1.11.0/dependi-lsp-x86_64-pc-windows-msvc.zip",
+            "url": "https://github.com/mpiton/zed-depsy/releases/download/v2.0.1/depsy-lsp-x86_64-pc-windows-msvc.zip",
             "hash": "a08cb91837d27c7354eb941cb3bc9c35cf8090b42ee2aeb5823263dd5157deb1"
         }
     },
     "shortcuts": [
         [
-            "dependi-lsp.exe",
-            "Dependi"
+            "depsy-lsp.exe",
+            "Depsy"
         ]
     ],
     "checkver": {
-        "github": "https://github.com/mpiton/zed-dependi"
+        "github": "https://github.com/mpiton/zed-depsy"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/mpiton/zed-dependi/releases/download/v$version/dependi-lsp-x86_64-pc-windows-msvc.zip"
+                "url": "https://github.com/mpiton/zed-depsy/releases/download/v$version/depsy-lsp-x86_64-pc-windows-msvc.zip"
             }
         }
     }
