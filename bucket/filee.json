@@ -13,7 +13,6 @@
         }
     },
     "bin": [
-        "Filee",
         [
             "Filee",
             "Filee.exe"
