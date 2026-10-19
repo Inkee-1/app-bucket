@@ -1,10 +1,10 @@
 {
-    "version": "5.2.2.0",
+    "version": "5.2.3.0",
     "description": "A unlimited speed multifunctional remote control software",
     "homepage": "https://www.todesk.com/",
     "license": "Proprietary",
-    "url": "https://dl.todesk.com/irrigation/ToDesk_5.2.2.0.exe#/dl.zip",
-    "hash": "63be2e53e3fd225534df0da518b829f1c1103db8888f4326b57ce1ab715e7222",
+    "url": "https://dl.todesk.com/irrigation/ToDesk_5.2.3.0.exe#/dl.zip",
+    "hash": "7420f01e215e40d4847b7259d1c9ba10808b71e003c684e8928ca5d6ebd7c683",
     "installer": {
         "script": [
             "$package_archive = if ($architecture -eq '64bit') {'app64.7z'} else {'app32.7z'}",
