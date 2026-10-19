@@ -1,5 +1,5 @@
 {
-    "version": "1.11.0",
+    "version": "1.12.0",
     "description": "免费开源文件转换器。支持离线拖放转换 180 多种格式——包括图片、PDF、Word、Excel、PowerPoint、HWP/HWPX、视频、音频、电子书和压缩文件。无需上传，无需 Office。",
     "homepage": "https://github.com/KnifeLemon/Filee",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/KnifeLemon/Filee/releases/download/v1.11.0/Filee-1.11.0-win-Portable.zip",
-            "hash": "c1efb31a39f1bd6e25e12749e85bb63dd5a2f14306df9fa5eec3e6b987416a7b"
+            "url": "https://github.com/KnifeLemon/Filee/releases/download/v1.12.0/Filee-1.12.0-win-Portable.zip",
+            "hash": "0396ee40cc4583264fbbb1d2c1643ddb79fccaed2c39be9f0f9afed1f8a977c9"
         }
     },
     "bin": [
