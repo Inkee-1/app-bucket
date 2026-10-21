@@ -1,28 +1,16 @@
 {
-    "version": "5.2.3.0",
-    "description": "A unlimited speed multifunctional remote control software",
     "homepage": "https://www.todesk.com/",
+    "description": "ToDesk Windows客户端. (Scoop bucket by arch3rpro)",
+    "version": "5.2.3.0",
     "license": "Proprietary",
-    "url": "https://dl.todesk.com/irrigation/ToDesk_5.2.3.0.exe#/dl.zip",
-    "hash": "7420f01e215e40d4847b7259d1c9ba10808b71e003c684e8928ca5d6ebd7c683",
-    "installer": {
-        "script": [
-            "$package_archive = if ($architecture -eq '64bit') {'app64.7z'} else {'app32.7z'}",
-            "Expand-7zipArchive -Path \"$dir\\$package_archive\" -DestinationPath \"$dir\"",
-            "Remove-Item -Path \"$dir\\`$PLUGINSDIR\", \"$dir\\app*.7z\", \"$dir\\uninst.exe\" -Force -Recurse",
-            "if (-not (Test-Path \"$persist_dir\\config.ini\")) {",
-            "    $initial_config = \"[ConfigInfo]`nautoStart=0`nautoupdate=0`n\"",
-            "    New-Item -Force -Path \"$dir\\config.ini\" -ItemType File -Value $initial_config | Out-Null",
-            "}"
-        ]
-    },
-    "bin": [
-        "ToDesk.exe",
-        [
-            "ToDesk.exe",
-            "ToDesk"
-        ]
+    "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe#/dl.7z",
+    "hash": "9f59903d420859125b71d51ca3c3328d34f63ee2a6850e5ed2f2620849ead317",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
+        "    New-Item -Force -Path \"$persist_dir\\config.ini\" -ItemType File -Value \"[ConfigInfo]`nautoStart=0\" | Out-Null",
+        "}"
     ],
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\uninst.exe\" -Force -Recurse",
     "shortcuts": [
         [
             "ToDesk.exe",
@@ -38,6 +26,6 @@
         "regex": ">([\\d.]+)</div>"
     },
     "autoupdate": {
-        "url": "https://dl.todesk.com/irrigation/ToDesk_$version.exe#/dl.zip"
+        "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe#/dl.7z"
     }
 }
