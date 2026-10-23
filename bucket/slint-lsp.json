@@ -16,7 +16,7 @@
             "hash": "60bc5840c4c943c1dd0ddfc3767a05fa5c9284ad7b8199f56545cd17ebb2ccef"
         }
     },
-    "bin": "slint-lsp.exe",
+    "bin":"slint-lsp.exe",
     "checkver": {
         "github": "https://github.com/slint-ui/slint"
     },
