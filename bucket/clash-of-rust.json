@@ -21,7 +21,8 @@
     ],
     "persist":"resources",
     "checkver": {
-        "url": "https://github.com/Fu021/Clash-of-Rust"
+        "url": "https://github.com/Fu021/Clash-of-Rust/releases.atom",
+        "regex": "Repository/\\d+/([\\d.]+)<"
     },
     "autoupdate": {
         "architecture": {
