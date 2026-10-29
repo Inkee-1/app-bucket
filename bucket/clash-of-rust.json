@@ -21,13 +21,14 @@
     ],
     "persist":"resources",
     "checkver": {
-        "url": "https://github.com/Fu021/Clash-of-Rust/releases.atom",
-        "regex": "Repository/\\d+/([\\d.]+)<"
+        "url": "https://api.github.com/repos/Fu021/Clash-of-Rust/releases",
+        "jp": "$[0].tag_name",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Fu021/Clash-of-Rust/releases/download/v$version/Clash-of-Rust-$version-windows-x64-setup.exe"
+                "url": "https://github.com/Fu021/Clash-of-Rust/releases/download/$version/Clash-of-Rust-$version-windows-x64-setup.exe"
             }
         }
     }
