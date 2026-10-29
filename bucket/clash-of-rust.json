@@ -28,7 +28,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Fu021/Clash-of-Rust/releases/download/$version/Clash-of-Rust-$version-windows-x64-setup.exe"
+                "url": "https://github.com/Fu021/Clash-of-Rust/releases/download/v$version/Clash-of-Rust-$version-windows-x64-setup.exe"
             }
         }
     }
