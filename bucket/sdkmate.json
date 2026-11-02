@@ -12,13 +12,7 @@
             "hash": "48652d74fe62d13f1e817e70d210a01d0daad8c3b737789022be54eee72c3a81"
         }
     },
-    "bin": [
-        "sdkm.exe",
-        [
-            "sdkm",
-            "sdkm.exe"
-        ]
-    ],
+    "bin":".sdkm/sdkm.exe",
     "checkver": {
         "github": "https://github.com/borenchan/sdkmate"
     },
