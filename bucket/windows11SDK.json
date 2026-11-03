@@ -1,0 +1,33 @@
+{
+    "version": "10.0.28000.2957",
+    "description": "Microsoft Windows 11 Software Developement Kit",
+    "homepage": "https://developer.microsoft.com/en-us/windows/downloads/sdk-archive",
+    "license": "https://www.microsoft.com/en-ca/legal/terms-of-use",
+    "url": "https://go.microsoft.com/fwlink/?linkid=2382519#/winsdksetup.exe",
+    "hash": "e8e264aca8bc34abdf592352bf09f986a85cdb96db0efba405ca9e149181fe61",
+    "env_set": {
+        "WIN11SDK_ROOT": "$dir\\sdk"
+    },
+    "installer": {
+        "args": [
+            "/quiet",
+            "/norestart"
+        ]
+    },
+    "uninstaller": {
+        "file": "winsdksetup.exe",
+        "args": [
+            "/uninstall",
+            "/quiet",
+            "/norestart"
+        ]
+    },
+    "checkver": {
+        "url": "https://developer.microsoft.com/en-us/windows/downloads/sdk-archive",
+        "regex": "Windows SDK for Windows 11[^(]*\\(([^\\)]+)[^?]*[^=]*=([0-9]*)",
+        "replace": "${1}"
+    },
+    "autoupdate": {
+        "url": "https://go.microsoft.com/fwlink/?linkid=$match2#/winsdksetup.exe"
+    }
+}
