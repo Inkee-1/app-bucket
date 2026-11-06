@@ -3,7 +3,7 @@
     "description": "ToDesk Windows客户端. (Scoop bucket by arch3rpro)",
     "version": "5.3.1.0",
     "license": "Proprietary",
-    "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe#/dl.7z",
+    "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe",
     "hash": "1de26a00fb93955f8e09d9534317954c692c3498d806e154c55a3b1c31805256",
     "installer": {
         "script": [
@@ -24,6 +24,6 @@
         "regex": ">([\\d.]+)</div>"
     },
     "autoupdate": {
-        "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe#/dl.7z"
+        "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe"
     }
 }
