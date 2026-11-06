@@ -34,22 +34,22 @@
         ]
     ],
     "pre_install": [
-        "if (!$bucket) { $bucket = 'abyss' }",
+        "if (!$bucket) { $bucket = 'app' }",
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Start-Install"
     ],
     "post_install": [
-        "if (!$bucket) { $bucket = 'abyss' }",
+        "if (!$bucket) { $bucket = 'app' }",
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Install"
     ],
     "pre_uninstall": [
-        "if (!$bucket) { $bucket = 'abyss' }",
+        "if (!$bucket) { $bucket = 'app' }",
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Start-Uninstall"
     ],
     "post_uninstall": [
-        "if (!$bucket) { $bucket = 'abyss' }",
+        "if (!$bucket) { $bucket = 'app' }",
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
