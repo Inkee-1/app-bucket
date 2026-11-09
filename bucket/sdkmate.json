@@ -1,5 +1,5 @@
 {
-    "version": "0.5.5",
+    "version": "0.5.6",
     "description": "🚀An SDK version manager for full-stack engineers",
     "homepage": "https://github.com/borenchan/sdkmate",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/borenchan/sdkmate/releases/download/v0.5.5/sdkm-windows-x86_64.zip",
-            "hash": "619c26286a0b88ac226d5c00202c757329aab1c1d35bd1798df7c025e7bc60cf"
+            "url": "https://github.com/borenchan/sdkmate/releases/download/v0.5.6/sdkm-windows-x86_64.zip",
+            "hash": "2d34c194a562a1583821521bffa29a59c3c5401406dd5d92f8afffe5a85ab160"
         }
     },
     "bin": ".sdkm/sdkm.exe",
