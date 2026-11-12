@@ -1,13 +1,13 @@
 {
-    "version": "2.1.2",
+    "version": "2.2.0",
     "description": "Dependi extension for the Zed editor — manage and update dependencies inline",
     "homepage": "https://github.com/mpiton/zed-depsy/",
     "license": "Mit",
     "notes": "Full documentation available here: https://mpiton.github.io/zed-depsy/",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mpiton/zed-depsy/releases/download/v2.1.2/depsy-lsp-x86_64-pc-windows-msvc.zip",
-            "hash": "c5a336c65ea3e1560a99b4d217371fcde611dc23245c5b619f1d7db5cbdab7e5"
+            "url": "https://github.com/mpiton/zed-depsy/releases/download/v2.2.0/depsy-lsp-x86_64-pc-windows-msvc.zip",
+            "hash": "7cf37d6478ccb96fbc859d77bba5cd3a2bc5c9212b8be19472b610fb0af66e81"
         }
     },
     "shortcuts": [
