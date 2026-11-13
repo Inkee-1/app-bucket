@@ -19,7 +19,7 @@
         "# 1. 文件夹空白处右键菜单 (Directory\\Background)",
         "reg add \"HKCU\\Software\\Classes\\Directory\\Background\\shell\\Windows Terminal\" /ve /d \"在此处打开终端\" /f",
         "reg add \"HKCU\\Software\\Classes\\Directory\\Background\\shell\\Windows Terminal\" /v \"Icon\" /d \"$dir\\elyterminal.exe\" /f",
-        "reg add \"HKCU\\Software\\Classes\\Directory\\Background\\shell\\Windows Terminal\\command\" /ve /d \"\\\"$dir\\elyterminal.exe\\\" -d .\" /f"
+        "reg add \"HKCU\\Software\\Classes\\Directory\\Background\\shell\\Windows Terminal\\command\" /ve /d \"$dir\\elyterminal.exe\" /f"
     ],
     "bin": [
         "elyterminal.exe"
