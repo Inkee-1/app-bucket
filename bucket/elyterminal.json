@@ -14,7 +14,8 @@
         }
     },
     "post_install": [
-        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /v \"Path\" /t REG_SZ /d \"$dir\\elyterminal.exe\" /f"
+        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /v \"Path\" /t REG_SZ /d \"$dir\\elyterminal.exe\" /f",
+        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /ve /d \"$dir\\elyterminal.exe\" /f"
     ],
     "bin": [
         "elyterminal.exe"
