@@ -1,0 +1,44 @@
+{
+    "version": "0.2.4",
+    "description": "A terminal on GPUI and Ely components",
+    "homepage": "https://github.com/ELY-Open-Source/ELYTerminal",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ELY-Open-Source/ELYTerminal/releases/download/v0.2.4/ELYTerminal-0.2.4-windows-x86_64.zip",
+            "hash": "e4d1e9381df6559ceedc305f6791f3bd27e1d5eb29c8f1f5ff05336c4ce4d838"
+        },
+        "arm64": {
+            "url": "https://github.com/ELY-Open-Source/ELYTerminal/releases/download/v0.2.4/ELYTerminal-0.2.4-windows-aarch64.zip",
+            "hash": "18eaf76c8beb355632f7e855fa3b9d95669af2f1fcc0a81226a2084f1657f129"
+        }
+    },
+    "post_install": [
+        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /v \"Path\" /t REG_SZ /d \"$dir\\elyterminal.exe\" /f"
+    ],
+    "bin": [
+        "elyterminal.exe"
+    ],
+    "shortcuts": [
+        [
+            "elyterminal.exe",
+            "elyterminal",
+            "et"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ELY-Open-Source/ELYTerminal/releases/download/v$version/ELYTerminal-$version-windows-x86_64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/ELY-Open-Source/ELYTerminal/releases/download/v$version/ELYTerminal-$version-windows-aarch64.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/ELY-Open-Source/ELYTerminal/releases.atom",
+            "regex": "Repository/\\d+/v([\\d.]+)<"
+        }
+    }
+}
