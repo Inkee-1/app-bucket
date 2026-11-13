@@ -14,12 +14,15 @@
         }
     },
     "post_install": [
-        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /v \"Path\" /t REG_SZ /d \"$dir\\elyterminal.exe\" /f",
-        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /ve /d \"$dir\\elyterminal.exe\" /f",
-        "# 1. 文件夹空白处右键菜单 (Directory\\Background)",
-        "reg add \"HKCU\\Software\\Classes\\Directory\\Background\\shell\\Windows Terminal\" /ve /d \"在此处打开终端\" /f",
-        "reg add \"HKCU\\Software\\Classes\\Directory\\Background\\shell\\Windows Terminal\" /v \"Icon\" /d \"$dir\\elyterminal.exe\" /f",
-        "reg add \"HKCU\\Software\\Classes\\Directory\\Background\\shell\\Windows Terminal\\command\" /ve /d \"$dir\\elyterminal.exe\" /f"
+        "'install-context', 'uninstall-context' | ForEach-Object {",
+        "    if (Test-Path \"$bucketsdir\\app\\scripts\\windows-terminal\\$_.reg\") {",
+        "        $wtPath = \"$dir\\elyterminal.exe\".Replace('\\', '\\\\')",
+        "        $content = (Get-Content \"$bucketsdir\\app\\scripts\\windows-terminal\\$_.reg\").Replace('$wt', $wtPath)",
+        "        if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
+        "        Set-Content \"$dir\\$_.reg\" $content -Encoding Ascii -Force",
+        "    }",
+        "}",
+        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /v \"Path\" /t REG_SZ /d \"$dir\\elyterminal\" /f"
     ],
     "bin": [
         "elyterminal.exe"
