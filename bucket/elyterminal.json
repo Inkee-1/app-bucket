@@ -15,14 +15,14 @@
     },
     "post_install": [
         "'install-context', 'uninstall-context' | ForEach-Object {",
-        "    if (Test-Path \"$bucketsdir\\app\\scripts\\windows-terminal\\$_.reg\") {",
+        "    if (Test-Path \"$bucketsdir\\$bucket\\scripts\\windows-terminal\\$_.reg\") {",
         "        $wtPath = \"$dir\\elyterminal.exe\".Replace('\\', '\\\\')",
-        "        $content = (Get-Content \"$bucketsdir\\app\\scripts\\windows-terminal\\$_.reg\").Replace('$wt', $wtPath)",
+        "        $content = (Get-Content \"$bucketsdir\\$bucket\\scripts\\windows-terminal\\$_.reg\").Replace('$wt', $wtPath)",
         "        if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
         "        Set-Content \"$dir\\$_.reg\" $content -Encoding utf-8 -Force",
         "    }",
         "}",
-        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /v \"Path\" /t REG_SZ /d \"$dir\\elyterminal\" /f"
+        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /v \"Path\" /t REG_SZ /d \"$dir\\elyterminal.exe\" /f"
     ],
     "bin": [
         "elyterminal.exe"
@@ -30,8 +30,7 @@
     "shortcuts": [
         [
             "elyterminal.exe",
-            "elyterminal",
-            "et"
+            "elyterminal"
         ]
     ],
     "checkver": "github",
