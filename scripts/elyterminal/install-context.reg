@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\shell\Ely Terminal]
+@="在此处打开终端"
+"Icon"="$et"
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\shell\Ely Terminal\command]
+@="\"$et\" -d ."
+
+; [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\Ely Terminal]
+; @="在此处打开终端"
+; "Icon"="$et"
+; [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\Ely Terminal\command]
+; @="\"$et\" -d ."
