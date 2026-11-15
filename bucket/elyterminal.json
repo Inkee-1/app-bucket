@@ -17,7 +17,7 @@
         "'install-context', 'uninstall-context' | ForEach-Object {",
         "    if (Test-Path \"$bucketsdir\\$bucket\\scripts\\elyterminal\\$_.reg\") {",
         "        $etPath = \"$dir\\elyterminal.exe\".Replace('\\', '\\\\')",
-        "        $content = (Get-Content \"$bucketsdir\\$bucket\\scripts\\elyterminal\\$_.reg\").Replace('$wt', $wtPath)",
+        "        $content = (Get-Content \"$bucketsdir\\$bucket\\scripts\\elyterminal\\$_.reg\").Replace('$et', $etPath)",
         "        if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
         "        Set-Content \"$dir\\$_.reg\" $content -Encoding utf-8 -Force",
         "    }",
