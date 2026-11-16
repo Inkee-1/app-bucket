@@ -48,7 +48,10 @@
         "        Set-Content \"$dir\\$_.reg\" $content -Encoding Ascii -Force",
         "    }",
         "}",
-        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /v \"Path\" /t REG_SZ /d \"$dir\\wt.exe\" /f"
+        "reg add \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /v \"Path\" /t REG_SZ /d \"$dir\\wt.exe\" /f",
+        "reg add \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /ve /t REG_SZ /d \"$dir\\wt.exe\" /f",
+        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /v \"Path\" /t REG_SZ /d \"$dir\\wt.exe\" /f",
+        "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe\" /ve /t REG_SZ /d \"$dir\\wt.exe\" /f"
     ],
     "bin": [
         "WindowsTerminal.exe",
