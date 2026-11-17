@@ -32,7 +32,6 @@
     "notes": [
         "TSF 输入法，安装 / 卸载需管理员权限，建议用管理员终端执行 scoop 命令。",
         "安装后按 Win + 空格 切换，可能需要注销或重启生效。",
-        "缺 VC++ x64 运行库会闪退，可先 scoop install vcredist2022。",
         "scoop update 不会删除用户数据（%LOCALAPPDATA%\\metasequoiaime 里的配置、词库、皮肤、models）；scoop uninstall 会按厂商逻辑清空它。"
     ],
     "checkver": {
