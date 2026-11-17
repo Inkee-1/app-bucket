@@ -16,7 +16,7 @@
         }
     },
     "installer": {
-        "script": "Start-Process -FilePath \"$dir\\MetasequoiaIME-Full_Setup.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-', \"/DIR=$dir\") -Wait"
+        "script": "Start-Process -FilePath \"$dir\\MetasequoiaIME-Full_Setup_v$version.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-', \"/DIR=$dir\") -Wait"
     },
     "uninstaller": {
         "script": [
