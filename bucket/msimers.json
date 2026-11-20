@@ -36,7 +36,7 @@
     ],
     "checkver": {
         "github": "https://github.com/metasequoiaime/msime/releases.atom",
-        "regex": "Repository/\\d+/windows-v([\\d.]+)<"
+        "regex": "Repository/\\d+/windows-v(.+?)"
     },
     "autoupdate": {
         "architecture": {
