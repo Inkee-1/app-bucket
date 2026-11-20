@@ -1,5 +1,5 @@
 {
-    "version": "0.5.0",
+    "version": "0.6.1",
     "description": "下一代跨平台水杉输入法（MSIME）：面向 Android、iOS、macOS、Linux、Windows 与 HarmonyOS 的多平台中文输入法，使用共享输入引擎与各平台原生宿主。",
     "homepage": "https://msime.app/",
     "license": "GPL-3.0-only",
@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/metasequoiaime/msime/releases/download/windows-v0.5.0/MetasequoiaIME-Full_Setup_v0.5.0.exe",
-            "hash": "sha256:5dc23c53afdcb8a9eb77811ad5d398054842a840091cf468159e248083682a43"
+            "url": "https://github.com/metasequoiaime/msime/releases/download/windows-v0.6.1/MetasequoiaIME-Full_Setup_v0.6.1.exe",
+            "hash": "93b96f2ffbd3fe715e038a3c1bcb5f48efb7d8049f50877fb0bffd4f94dd70be"
         }
     },
     "installer": {
