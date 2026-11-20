@@ -18,7 +18,7 @@
         ]
     ],
     "persist": "config",
-    "checkver": "github",
+    "checkver": "https://github.com/yituorou/meatshell",
     "autoupdate": {
         "architecture": {
             "64bit": {
