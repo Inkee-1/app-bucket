@@ -13,6 +13,17 @@
             "hash": "4055c5d2ee00de8c643f91ff25f19d85b748ae4a7fc133b67d2dd1d9810b04f1"
         }
     },
+    "installer": {
+            "script": [
+                "[Environment]::SetEnvironmentVariable('KACHE_CONFIG', \"$persist_dir\\.config\", 'Process')"
+            ]
+        },
+    "env_set": {
+            "KACHE_CONFIG": "$persist_dir\\.config"
+        },
+    "persist": [
+            ".config"
+        ],
     "bin": "kache.exe",
     "checkver": {
         "url": "https://github.com/kunobi-ninja/kache/releases.atom",
