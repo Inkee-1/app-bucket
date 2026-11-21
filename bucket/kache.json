@@ -15,11 +15,11 @@
     },
     "installer": {
             "script": [
-                "[Environment]::SetEnvironmentVariable('KACHE_CONFIG', \"$persist_dir\\.config\", 'Process')"
+                "[Environment]::SetEnvironmentVariable('KACHE_CONFIG', \"$persist_dir\\.config\\config.toml\", 'Process')"
             ]
         },
     "env_set": {
-            "KACHE_CONFIG": "$persist_dir\\.config"
+            "KACHE_CONFIG": "$persist_dir\\.config\\config.toml"
         },
     "persist": [
             ".config"
