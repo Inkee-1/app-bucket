@@ -25,7 +25,8 @@
             "KACHE_CACHE_DIR": "$persist_dir\\cache"
         },
     "persist": [
-            ".config"
+            ".config",
+            "cache"
         ],
     "bin": "kache.exe",
     "checkver": {
