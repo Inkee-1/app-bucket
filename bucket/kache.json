@@ -24,6 +24,7 @@
             "KACHE_CONFIG": "$persist_dir\\.config\\config.toml",
             "KACHE_CACHE_DIR": "$persist_dir\\cache"
         },
+    "env_add_path": "$dir\\",
     "persist": [
             ".config",
             "cache"
