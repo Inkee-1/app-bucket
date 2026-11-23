@@ -18,7 +18,10 @@
         ]
     ],
     "persist": "config",
-    "checkver": "https://github.com/yituorou/meatshell",
+    "checkver": {
+        "url":"https://github.com/yituorou/meatshell/releases.atom",
+        "regex": "Repository/\\d+/v(.+?)<"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
