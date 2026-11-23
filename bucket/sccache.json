@@ -15,17 +15,6 @@
             "extract_dir": "sccache-v0.20.0-aarch64-pc-windows-msvc"
         }
     },
-    "installer": {
-        "script": [
-            "[Environment]::SetEnvironmentVariable('SCCACHE_DIR', \"$persist_dir\\.cache\\sccache\", 'Process')"
-        ]
-    },
-    "env_set": {
-        "SCCACHE_DIR": "$persist_dir\\.cache\\sccache"
-    },
-    "persist": [
-        ".cache"
-    ],
     "bin": "sccache.exe",
     "checkver": "github",
     "autoupdate": {
