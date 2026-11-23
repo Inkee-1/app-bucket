@@ -21,7 +21,7 @@
         ]
     },
     "env_set": {
-        "CARGO_HOME": "$persist_dir\\.cache\\sccache"
+        "SCCACHE_DIR": "$persist_dir\\.cache\\sccache"
     },
     "persist": [
         ".cache"
