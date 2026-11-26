@@ -1,12 +1,12 @@
 {
-    "version": "0.7.2",
+    "version": "0.7.3",
     "description": "基于 Rust、Slint 与 mihomo 的跨平台代理客户端，支持 Windows、macOS、Linux 和 Android。",
     "homepage": "http://github.com/Fu021/Clash-of-Rust",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Fu021/Clash-of-Rust/releases/download/v0.7.2/Clash-of-Rust-0.7.2-windows-x64-setup.exe",
-            "hash": "1f25dea3afedac9322757a6f7945cc4dadda40b98a5c202650be470f6c55c6fe"
+            "url": "https://github.com/Fu021/Clash-of-Rust/releases/download/v0.7.3/Clash-of-Rust-0.7.3-windows-x64-setup.exe",
+            "hash": "5bd7481de892a8d002bafb846cdaf09071d7412b571cc994f4d1af86e0cb7c60"
         }
     },
     "installer": {
