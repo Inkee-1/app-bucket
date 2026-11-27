@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.todesk.com/",
     "description": "ToDesk Windows客户端. (Scoop bucket by arch3rpro)",
-    "version": "5.3.4.0",
+    "version": "5.4.0.0",
     "license": "Proprietary",
     "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe",
-    "hash": "33eb2d0d0ab2d0f51ac4fab30de7970dae9122be582aa8d939764dd87002394c",
+    "hash": "dcd7498437de45f22d641f6c9a4d7c35e9394a93e6b6e18940c01cf3666487a1",
     "installer": {
         "script": [
             "Expand-7zipArchive -Path \"$dir\\ToDesk_Setup.exe\" -DestinationPath \"$dir\" -Removal",
